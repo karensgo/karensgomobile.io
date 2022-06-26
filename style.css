@@ -5,14 +5,16 @@
     font-family: "Montserrat",sans-serif
   }
 
- 
-  @media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-	font-size: 12px;
-}
+  @media only screen and (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+  }
+
+
   
   header {
+    width: 100%;
     height: 150px;
     display: flex;
     background-color: #261611;
@@ -36,15 +38,6 @@ and (max-device-width : 480px) {
     margin-right: 20px;
     text-decoration: none;
   }
-  header nav a.run {
-    text-align: center;
-    margin-top: -7px;
-    padding: 9px;
-    background-color: #56c9d6;
-    height: 45px;
-    width: 125px;
-    border-radius: 4px;
-}
   .out {
     display: none;
   }
@@ -160,11 +153,13 @@ and (max-device-width : 480px) {
     padding: 0 50px;
     display: flex;
     background-color: #180e0b;
+    position: relative;
     text-align: center;
     align-items: center;
+
   }
   
-    }
+  
     header nav {
       display: none;
     }
@@ -222,4 +217,4 @@ and (max-device-width : 480px) {
     footer {
       font-size: 11px;
     }
-  }
+  
